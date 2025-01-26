@@ -44,11 +44,39 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp ENTER>;
+            label = "PASS";
+        };
+
+        CornerBrackets: CornerBrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp ENTER &kp LEFT_ARROW>;
+            label = "CORNERBRACKETS";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C) &kp RIGHT_ARROW>;
+            label = "COPY";
+        };
+
+        AllCopy: AllCopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(A) &kp LG(C) &kp RIGHT_ARROW>;
+            label = "ALLCOPY";
+        };
+
+        Copywin: Copywin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp RIGHT_ARROW>;
+            label = "COPYWIN";
         };
     };
 
@@ -68,10 +96,10 @@
 
         default_layer {
             bindings = <
-&lt 4 Q           &kp W         &kp E         &kp R                        &kp T                                                           &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp K_MUTE                         &kp MINUS       &kp H          &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON   &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &lt 1 CAPSLOCK  &kp BACKSPACE                             &kp ENTER
+&lt 4 Q           &kp W         &kp E         &kp R                        &kp T                                         &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp K_MUTE       &kp MINUS       &kp H          &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON        &kp SEMICOLON   &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_HENKAN  &lt 3 SPACE  &lt 1 LANG6      &lt 1 INT_KANA  &kp BACKSPACE                             &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -79,11 +107,13 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                 &trans        &kp EXCLAMATION  &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans            &trans       &trans  &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans            &trans       &trans  &kp QUESTION  &trans           &trans          &trans           &trans
-&trans  &trans  &trans  &kp F9  &kp INT_MUHENKAN  &kp F10      &trans  &trans                                                          &trans
+&trans  &trans  &trans     &trans  &trans                                 &trans        &kp EXCLAMATION  &kp UP_ARROW    &trans           &pass
+&trans  &trans  &kp LG(V)  &copy   &trans            &trans       &trans  &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans     &trans  &trans            &trans       &trans  &kp QUESTION  &trans           &trans          &trans           &trans
+&trans  &trans  &trans     &kp F9  &kp INT_MUHENKAN  &kp F10      &trans  &trans                                                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         NUM {
