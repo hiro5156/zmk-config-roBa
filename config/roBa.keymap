@@ -76,6 +76,14 @@
         };
     };
 
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -112,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans                                &trans    &kp HOME     &kp END        &trans    &trans
-&trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &msc MOVE_X(-10)  &trans      &none   &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
-&trans  &trans          &msc SCRL_DOWN  &trans           &msc MOVE_Y(10)   &trans      &trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &trans    &trans
-&trans  &trans          &trans          &trans           &trans            &trans      &trans  &trans                                          &trans
+&trans          &trans          &msc SCRL_UP    &trans           &trans                      &trans    &kp HOME     &kp END        &trans    &trans
+&trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &trans      &none   &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
+&kp LEFT_SHIFT  &trans          &none           &trans           &none   &trans      &trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &trans    &trans
+&trans          &trans          &trans          &trans           &trans  &trans      &trans  &trans                                          &trans
             >;
         };
 
