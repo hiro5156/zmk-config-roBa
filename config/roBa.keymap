@@ -120,13 +120,13 @@
         };
 
         lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            /* 例：Holdで layer 2 に momentary、Tap で layer 0 へ "to" */
-            bindings = <&mo 2>, <&to_layer_0 0>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+             compatible = "zmk,behavior-hold-tap";
+             label = "LAYER_TAP_TO_0";
+             #binding-cells = <2>;
+             /* hold: &mo 2, tap: &to_layer_0 0 */
+             bindings = <&mo 2 &to_layer_0 0>;
+             tapping-term-ms = <200>;
+             };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
