@@ -116,8 +116,8 @@
        to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-to-layer";
             label = "TO_LAYER_0";
-            #binding-cells = <0>;
-            layer = <0>;  /* 「layer 0へ飛ぶ」ように指定 */
+            #binding-cells = <1>;
+            layer = <0>;
         };
 
         lt_to_layer_0: lt_to_layer_0 {
