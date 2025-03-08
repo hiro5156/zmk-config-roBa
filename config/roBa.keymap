@@ -69,6 +69,42 @@
             bindings = <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp ENTER>;
             label = "PA";
         };
+
+        bt0: bt0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>;
+
+            label = "BT0";
+        };
+
+        bt1: bt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 500>;
+
+            label = "BT1";
+        };
+
+        bt2: bt2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>;
+
+            label = "BT2";
+        };
     };
 
     behaviors {
@@ -199,7 +235,7 @@
 &none         &none         &none         &none  &none                          &none  &none  &none  &none  &none
 &bt BT_CLR    &none         &none         &none  &none  &none      &none        &none  &none  &none  &none  &none
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &none      &bootloader  &none  &none  &none  &none  &none
-&none         &none         &none         &none  &none  &none      &none        &none                       &trans
+&bt0          &bt1          &bt2          &none  &none  &none      &none        &none                       &trans
             >;
         };
     };
