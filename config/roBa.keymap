@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             /* 例：Holdで layer 2 に momentary、Tap で layer 0 へ "to" */
-+           bindings = <&mo 2>, <&to_layer_0 0>;
+            bindings = <&mo 2>, <&to_layer_0 0>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
