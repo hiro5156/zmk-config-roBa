@@ -72,7 +72,6 @@
     };
 
     behaviors {
-
          /* ここで to_layer_0 を定義 */
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-to-layer";
@@ -114,7 +113,6 @@
             toggle-mode = "off";
         };
     };
-};
 
     keymap {
         compatible = "zmk,keymap";
