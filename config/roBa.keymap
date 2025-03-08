@@ -72,32 +72,7 @@
     };
 
     behaviors {
-         /* ここで to_layer_0 を定義 */
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-to-layer";
-            label = "TO_LAYER_0";
-            #binding-cells = <1>;
-        };
-
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            /* 
-             * &mo や &to_layer_0 は "behavior-momentary-layer" や
-             * "behavior-to-layer" ノードが別途定義されている必要があります。
-             * もし mo が未定義であれば、同様に定義してください。
-             */
-            bindings = <&mo 1>, <&to_layer_0 0>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <20>;
-        };
+        /* ここで to_layer_0 を定義 */
 
         tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
