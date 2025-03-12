@@ -150,6 +150,13 @@
             bindings = <&kp LS(Z) &kp X &kp C &kp V &kp G &kp N &kp H &kp N2 &kp N5 &kp N8>;
             label = "HIROPA";
         };
+
+        scrolly: scrolly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "SCROLLY";
+        };
     };
 
     behaviors {
@@ -249,7 +256,7 @@
             bindings = <
 &kp NUMBER_3    &none           &msc SCRL_UP    &none            &none                    &none     &kp HOME   &kp END    &none     &none
 &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &none      &none      &none     &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &scrolly   &none      &none     &none
 &none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
@@ -258,17 +265,17 @@
             bindings = <
 &kp NUMBER_1    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME   &kp END    &none     &none
 &none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &none      &none      &none     &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &scrolly   &none      &none     &none
 &none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
 
         iPad_mouse {
             bindings = <
-&kp NUMBER_2    &none           &msc SCRL_DOWN  &none            &none                    &none          &kp HOME     &kp END    &none     &none
-&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4       &mkp LCLK    &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &kp LG(LA(D))  &kp LG(TAB)  &kp LG(H)  &none     &none
-&none           &none           &none           &none            &none  &none      &none  &none                                            &none
+&kp NUMBER_2    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME   &kp END    &none     &none
+&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
+&kp LEFT_SHIFT  &kp LA(LG(D))   &kp LG(TAB)     &kp LG(H)        &none  &none      &none  &none     &scrolly   &none      &none     &none
+&none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
 
