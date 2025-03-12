@@ -205,7 +205,9 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 4 SPACE  &mo 7                &lt 4 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&scroll_up_down>;
         };
 
         iPad_default {
@@ -216,7 +218,9 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 5 SPACE  &mo 8                &lt 5 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&scroll_up_down>;
         };
 
         WIN_Function {
