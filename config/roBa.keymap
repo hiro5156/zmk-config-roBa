@@ -136,7 +136,7 @@
 &kp Q             &kp W         &kp E         &kp R        &kp T                                                         &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F        &kp G        &kp K_MUTE            &kp PIPE                   &kp H          &kp J  &kp K      &kp L    &kp ENTER
 &kp Z             &kp X         &kp C         &kp V        &kp B        &CornerBrackets       &braketfree                &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 7 SPACE  &lt 8 LEFT_SHIFT      &lt 7 LANG_ZENKAKUHANKAKU  &kp BACKSPACE                             &lt 10 APOS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 3 SPACE  &lt 6 LEFT_SHIFT      &lt 3 LANG_ZENKAKUHANKAKU  &kp BACKSPACE                             &lt 10 APOS
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -147,7 +147,7 @@
 &kp Q             &kp W         &kp E         &kp R        &kp T                                              &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F        &kp G        &kp K_MUTE            &kp PIPE        &kp H          &kp J  &kp K      &kp L    &kp ENTER
 &kp Z             &kp X         &kp C         &kp V        &kp B        &CornerBrackets       &braketfree     &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 3 SPACE  &lt 4 LEFT_SHIFT      &lt 3 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 4 SPACE  &lt 7 LEFT_SHIFT      &lt 4 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -158,58 +158,40 @@
 &kp Q             &kp W         &kp E         &kp R        &kp T                                              &kp Y          &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F        &kp G        &kp K_MUTE            &kp PIPE        &kp H          &kp J  &kp K      &kp L    &kp ENTER
 &kp Z             &kp X         &kp C         &kp V        &kp B        &CornerBrackets       &braketfree     &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 5 SPACE  &lt 6 LEFT_SHIFT      &lt 5 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 ENTER  &lt 5 SPACE  &lt 8 LEFT_SHIFT      &lt 5 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
-        MAC_Function {
+        WIN_Function {
             bindings = <
-&kp LG(A)           &AllCopy   &none          &none   &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &PA              &kp SEMICOLON
-&kp LG(Z)           &kp LG(X)  &kp LG(V)      &copy   &kp LG(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
-&kp LC(LEFT_SHIFT)  &none      &none          &none   &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
-&none               &kp F9     &kp LA(LG(C))  &kp F6  &kp F7     &kp F10      &trans             &trans                                                          &kp PRCNT
+&kp LC(A)       &AllCopy   &none      &none     &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
+&kp RC(Z)       &kp LC(X)  &kp LC(V)  &Copywin  &kp LC(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
+&kp LEFT_SHIFT  &none      &none      &none     &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
+&none           &kp F9     &kp LG(V)  &kp F6    &kp F7     &kp F10      &trans             &trans                                                          &kp PRCNT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        MAC_Mouse {
+        MAC_Function {
             bindings = <
-&kp NUMBER_1    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME     &kp END        &none     &none
-&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &kp PAGE_UP  &kp PAGE_DOWN  &none     &none
-&none           &none           &none           &none            &none  &none      &none  &none                                           &none
+&kp LG(A)       &AllCopy   &none          &none   &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
+&kp LG(Z)       &kp LG(X)  &kp LG(V)      &copy   &kp LG(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
+&kp LEFT_SHIFT  &none      &none          &none   &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
+&none           &kp F9     &kp LA(LG(C))  &kp F6  &kp F7     &kp F10      &trans             &trans                                                          &kp PRCNT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         iPad_Function {
             bindings = <
-&kp LG(A)           &AllCopy   &none          &none   &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &PA              &kp SEMICOLON
-&kp LG(Z)           &kp LG(X)  &kp LG(V)      &copy   &kp LG(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
-&kp LC(LEFT_SHIFT)  &none      &none          &none   &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
-&none               &none      &kp LA(LG(C))  &kp F9  &kp F7     &kp F10      &trans             &trans                                                          &kp PRCNT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-
-        iPad_mouse {
-            bindings = <
-&kp NUMBER_2    &none           &msc SCRL_DOWN  &none            &none                    &none          &kp HOME     &kp END    &none     &none
-&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4       &mkp LCLK    &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &kp LG(LA(D))  &kp LG(TAB)  &kp LG(H)  &none     &none
-&none           &none           &none           &none            &none  &none      &none  &none                                            &none
-            >;
-        };
-
-        WIN_Function {
-            bindings = <
-&kp LC(A)           &AllCopy   &none      &none     &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &PA              &kp SEMICOLON
-&kp RC(Z)           &kp LC(X)  &kp LC(V)  &Copywin  &kp LC(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
-&kp LC(LEFT_SHIFT)  &none      &none      &none     &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
-&none               &kp F9     &kp LG(V)  &kp F6    &kp F7     &kp F10      &trans             &trans                                                          &kp PRCNT
+&kp LG(A)       &AllCopy   &none          &none   &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
+&kp LG(Z)       &kp LG(X)  &kp LG(V)      &copy   &kp LG(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
+&kp LEFT_SHIFT  &none      &none          &none   &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
+&none           &none      &kp LA(LG(C))  &kp F9  &kp F7     &kp F10      &trans             &trans                                                          &kp PRCNT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -221,6 +203,24 @@
 &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
 &kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &kp PAGE_UP  &kp PAGE_DOWN  &none     &none
 &none           &none           &none           &none            &none  &none      &none  &none                                           &none
+            >;
+        };
+
+        MAC_Mouse {
+            bindings = <
+&kp NUMBER_1    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME     &kp END        &none     &none
+&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &kp PAGE_UP  &kp PAGE_DOWN  &none     &none
+&none           &none           &none           &none            &none  &none      &none  &none                                           &none
+            >;
+        };
+
+        iPad_mouse {
+            bindings = <
+&kp NUMBER_2    &none           &msc SCRL_DOWN  &none            &none                    &none          &kp HOME     &kp END    &none     &none
+&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4       &mkp LCLK    &mkp RCLK  &mkp MB5  &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &kp LG(LA(D))  &kp LG(TAB)  &kp LG(H)  &none     &none
+&none           &none           &none           &none            &none  &none      &none  &none                                            &none
             >;
         };
 
