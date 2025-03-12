@@ -160,14 +160,6 @@
     };
 
     behaviors {
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-
         tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -205,7 +197,7 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_CONTROL  &lt 9 ENTER  &lt 4 SPACE  &mo 7                &lt 4 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&none>, <&none>;
         };
 
         iPad_default {
@@ -216,9 +208,7 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_CONTROL  &lt 9 ENTER  &lt 5 SPACE  &mo 8                &lt 5 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>, <&none>;
         };
 
         WIN_Function {
