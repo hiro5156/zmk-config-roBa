@@ -177,7 +177,7 @@
 
         MAC_Function {
             bindings = <
-&kp LG(A)       &AllCopy   &none          &none   &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
+&kp LG(A)       &AllCopy   &none          &none   &PA                                        &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
 &kp LG(Z)       &kp LG(X)  &kp LG(V)      &copy   &kp LG(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
 &kp LEFT_SHIFT  &none      &none          &none   &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
 &none           &kp F9     &kp LA(LG(C))  &kp F7  &kp F6     &kp F10      &trans             &trans                                                          &kp PRCNT
@@ -188,7 +188,7 @@
 
         iPad_Function {
             bindings = <
-&kp LG(A)       &AllCopy   &none      &none   &none                                      &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
+&kp LG(A)       &AllCopy   &none      &none   &PA                                        &none         &kp EXCLAMATION  &kp UP_ARROW    &kp UNDER        &kp SEMICOLON
 &kp LG(Z)       &kp LG(X)  &kp LG(V)  &copy   &kp LG(S)  &none        &none              &kp MINUS     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH
 &kp LEFT_SHIFT  &none      &none      &none   &none      &none        &kp DOUBLE_QUOTES  &kp QUESTION  &kp COLON        &kp AT_SIGN     &kp AMPERSAND    &kp CARET
 &none           &kp F9     &none      &kp F7  &kp F6     &kp F10      &trans             &trans                                                          &kp PRCNT
@@ -199,19 +199,19 @@
 
         WIN_Mouse {
             bindings = <
-&kp NUMBER_3    &none           &msc SCRL_UP    &none            &none                    &none     &kp HOME     &kp END        &none     &none
-&none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &kp PAGE_UP  &kp PAGE_DOWN  &none     &none
-&none           &none           &none           &none            &none  &none      &none  &none                                           &none
+&kp NUMBER_3    &none           &msc SCRL_UP    &none            &none                    &none     &kp HOME   &kp END    &none     &none
+&none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &none      &none      &none     &none
+&none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
 
         MAC_Mouse {
             bindings = <
-&kp NUMBER_1    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME     &kp END        &none     &none
-&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK    &mkp RCLK      &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &kp PAGE_UP  &kp PAGE_DOWN  &none     &none
-&none           &none           &none           &none            &none  &none      &none  &none                                           &none
+&kp NUMBER_1    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME   &kp END    &none     &none
+&none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &none      &none      &none     &none
+&none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
 
