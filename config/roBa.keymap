@@ -248,7 +248,7 @@
             bindings = <
 &kp NUMBER_3    &none           &msc SCRL_UP    &none            &none                    &none     &kp HOME   &kp END    &none     &none
 &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &scrolly   &none      &none     &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &none      &none      &none     &none
 &none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
@@ -257,7 +257,7 @@
             bindings = <
 &kp NUMBER_1    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME   &kp END    &none     &none
 &none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &scrolly   &none      &none     &none
+&kp LEFT_SHIFT  &none           &none           &none            &none  &none      &none  &none     &none      &none      &none     &none
 &none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
@@ -266,7 +266,7 @@
             bindings = <
 &kp NUMBER_2    &none           &msc SCRL_DOWN  &none            &none                    &none     &kp HOME   &kp END    &none     &none
 &none           &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &none  &none      &none  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &none
-&kp LEFT_SHIFT  &kp LA(LG(D))   &kp LG(TAB)     &kp LG(H)        &none  &none      &none  &none     &scrolly   &none      &none     &none
+&kp LEFT_SHIFT  &kp LA(LG(D))   &kp LG(TAB)     &kp LG(H)        &none  &none      &none  &none     &none      &none      &none     &none
 &none           &none           &none           &none            &none  &none      &none  &none                                     &none
             >;
         };
