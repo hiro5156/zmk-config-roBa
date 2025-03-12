@@ -178,8 +178,6 @@
 &kp Z           &kp X         &kp C             &kp V        &kp B        &CornerBrackets      &braketfree                &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_CONTROL  &lt 9 ENTER  &lt 3 SPACE  &mo 6                &lt 3 LANG_ZENKAKUHANKAKU  &kp BACKSPACE                             &lt 10 APOS
             >;
-
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         MAC_default {
@@ -189,8 +187,6 @@
 &kp Z           &kp X         &kp C             &kp V        &kp B        &CornerBrackets      &braketfree     &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_CONTROL  &lt 9 ENTER  &lt 4 SPACE  &mo 7                &lt 4 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
-
-            sensor-bindings = <&none>, <&none>;
         };
 
         iPad_default {
@@ -200,8 +196,6 @@
 &kp Z           &kp X         &kp C             &kp V        &kp B        &CornerBrackets      &braketfree     &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_CONTROL  &lt 9 ENTER  &lt 5 SPACE  &mo 8                &lt 5 CAPSLOCK  &kp BACKSPACE                             &lt 10 APOS
             >;
-
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>, <&none>;
         };
 
         WIN_Function {
